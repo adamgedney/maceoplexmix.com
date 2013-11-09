@@ -1,0 +1,361 @@
+
+
+
+
+/* 	Copyright Adam Gedney 3/31/13
+	contact: adam.gedney@gmail.com
+	http://adamgedney.com
+
+"Good UI design is humble.” – Jono DiCarlo
+*/
+
+
+/*
+white: f0eee6;
+light grey: 979691;
+link blue: #5A7286;
+red: d93330;
+
+
+*/
+/*--------------------------------------Start CSS Reset---------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, cite, code,del, em, img, strike, strong, sub, sup, tt, var,b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+
+ul {
+list-style: none;
+}
+
+
+
+
+
+
+
+/*--------------------------------------End CSS Reset / Start General-------------------------------*/
+html{
+	min-height: 100%;
+}
+
+body{
+background: url('../images/bg1.jpg') no-repeat fixed 100% 100% #252525;
+background-size: cover;
+color: #f0eee6;
+font: 62.5% 'Gruppo', cursive, "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+}
+
+h1{
+font-size: 6.9em;
+line-height: 1.1em;
+}
+
+h2{
+font-size: 6.9em;
+line-height: 1.14em;
+}
+
+h3, .page-inner a{
+font-size: 4.2em;
+line-height: 1.5em;
+}
+
+p, ul, dl{
+font-size: 1.4em;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+ul{
+line-height: 1.3em;
+}
+
+a{
+outline: none;
+/*color: #f0eee6;*/
+}
+
+img{
+	max-width: 100%;
+}
+
+/*--------------------------------------End General / Start Main------------------------------------*/
+/*.inner{
+	min-width: 100%;
+	min-height: 100%;
+	background: rgba(30,38,45,.5);
+}*/
+
+header{
+	width: 80%;/*912px*/
+	height: 50px;
+	margin: 0 auto 36px;
+}
+
+header h1{
+	display: block;
+	font-size: .1em;
+	width: 10px;
+	text-indent: 200%;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+}
+
+header ul{
+	background: url('../images/maceo-plex-mix-menu-button.png') no-repeat;
+	float: left;
+	margin-top: 5px;
+	height: 45px;
+	width: 45px;/* 45px*/
+	position: absolute;
+}
+
+header ul li{
+	visibility: hidden;
+	opacity: 1;
+	/*transition-duration: 1s;*/
+}
+
+header ul li a{
+	text-decoration: none;
+	color: #f0eee6;
+}
+
+header ul li a.site-info{
+	color: #d93330;
+}
+
+header ul li a:hover{
+	color: #5A7286;
+
+}
+
+header ul li:nth-child(odd){
+	background: rgba(0,0,0,.9);
+}
+
+header ul li:nth-child(even){
+	background: rgba(240,238,230, .1);
+	color: #252525;
+}
+
+
+header ul:hover > li, .vis{
+	visibility: visible;
+	margin-left: 43px;
+	display: block;
+	width: 200px;/*200px*/
+	height: 14px;
+	padding: 6px;
+	line-height: 14px;
+	/*color: #979691;*/
+	white-space: nowrap;
+	overflow: hidden;
+	transition-duration: 1s;
+	webkit-transition-duration: 1s;
+}
+
+header ul li:hover{
+	opacity: .5;
+	transition-duration: 1s;
+	webkit-transition-duration: 1s;
+}
+
+.dark{
+	color: #252525;
+}
+
+.landing img{
+	display: block;
+	width: 150px;/*150px*/
+	height: 150px;
+	margin: 0 auto 36px;
+}
+
+.landing h2{
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+ .landing p{
+ 	text-align: left;
+ 	font-size: 2.1em;
+ 	line-height: 1.5em;
+ 	color: #979691;
+ 	width: 33.333333%;/*380px*/
+ 	margin: 0 auto 150px;
+ }
+
+.landing .more-arrow{
+	margin: 0 auto -53px;
+	width: 110px;/*110px*/
+	height: 110px;
+}
+
+.page{
+	height: 500px;
+	width: 100%;
+	padding-top: 400px;
+}
+
+.page:nth-child(2n+1){
+	background: rgba(30,38,45,.8);
+}
+
+.page-inner{
+	width: 1140px; /*912px*/
+	height: 200px;
+	margin: 0 auto;
+}
+
+.festival-orb{
+	display: inline-block;
+	float: left;
+	width: 150px; /*150px*/
+	height: 150px; /*150px*/
+	/*margin-top: 400px;*/
+}
+
+.page-inner a{
+	display: block;
+	position: relative;
+	height: 100px;
+	float: left;
+	width: 85.087719%; /*970px -was 75%*/
+	margin: 36px 0 0 18px;/*left=20px 2.192982%*/
+	color: #f0eee6;
+}
+
+.top{
+	position: relative;
+	z-index: 10;
+	clear: both;
+	width: 110px;/*110px*/
+	height: 110px;/*110px*/
+	margin: 72px auto 0;
+}
+
+.top a{
+	display: block;
+	width: 110px;/*110px*/
+	height: 110px;/*110px*/
+}
+
+.top a:hover, footer a:hover, .page-inner a:hover{
+	opacity: .1;
+	transition-duration: 1s;
+}
+
+.page .more-arrow{
+	display: block;
+	width: 110px;/*110px*/
+	height: 110px;/*110px*/
+}
+
+footer{
+	height: 63px;
+	background: #252525;
+	padding-top: 63px;
+}
+
+footer p{
+	font-size: 1.8em;
+	color: #d93330;
+	text-align: center;
+}
+
+footer a{
+	color: #5A7286;
+}
+
+
+/*----------------------------------@media max 700px----------------------------------*/
+
+
+@media (max-width: 850px){
+
+h2{
+font-size: 3.9em;
+}
+
+header{
+	height: 30px;
+	margin: 0 auto;
+}
+
+header ul:hover > li, .vis{
+	width: 300px;
+}
+
+header ul li:nth-child(odd){
+	background: rgba(0,0,0,1);
+}
+
+body header ul li:nth-child(even) {
+    background: rgba(240,238,230, .6);
+    color: #252525;
+}
+
+body header ul li a:nth-child(even){
+	color: #252525;
+}
+
+.page{
+	height: 400px;
+	padding-top: 100px;
+}
+
+.page .more-arrow{
+	width: 70px;/*110px*/
+	height: 70px;/*110px*/
+	margin: 0 auto;
+}
+
+.landing img{
+	margin: 0 auto 18px;
+}
+
+.landing p{
+	width: 90%;
+	line-height: 1.2em;
+}
+
+.page-inner{
+	width: 100%; /*912px*/
+	margin: 0 auto;
+}
+
+.festival-orb{
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+.page-inner a{
+	font-size: 1.8em;
+	float: none;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+
+
